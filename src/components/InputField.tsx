@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
 import '../styles/styles.css';
+import {MdOutlineAddTask} from 'react-icons/md';
 
 interface Props {
     todo: string,
@@ -10,7 +11,6 @@ interface Props {
 const InputField: React.FC<Props> = ({todo, setTodo, handleAdd}) => {
     const inputRef = useRef<HTMLInputElement>(null);
 
-
     return (<form className='input'
                   onSubmit={(e) => {
                       handleAdd(e);
@@ -20,7 +20,9 @@ const InputField: React.FC<Props> = ({todo, setTodo, handleAdd}) => {
                value={todo} onChange={(e) => {
             setTodo(e.target.value)
         }}/>
-        <button className='input_submit' type='submit'>Go</button>
+        <button className='input_submit' type='submit'>
+            <MdOutlineAddTask  />
+        </button>
     </form>);
 };
 

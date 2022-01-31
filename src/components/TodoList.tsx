@@ -3,6 +3,7 @@ import '../styles/styles.css';
 import {TODO} from "../model";
 import SingleTodo from "./SingleTodo";
 
+// interface vs types
 interface Props{
     todos: TODO[],
     setTodos: React.Dispatch<React.SetStateAction<TODO[]>>

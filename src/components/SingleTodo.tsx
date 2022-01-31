@@ -4,7 +4,6 @@ import {AiFillEdit, AiFillDelete} from "react-icons/ai";
 import {MdDone} from "react-icons/md";
 import '../styles/styles.css';
 
-
 type Props = {
     todo: TODO, todos: TODO[], setTodos: React.Dispatch<React.SetStateAction<TODO[]>>
 }

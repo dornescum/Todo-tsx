@@ -7,13 +7,13 @@ import {TODO} from "./model";
 
 
 const App:React.FC =()=> {
-
   const [todo, setTodo] =useState<string>('');
   const [todos, setTodos] =useState<TODO[]>([]);
   console.log(todos)
 
   const handleAdd=(e:React.FormEvent)=>{
     e.preventDefault();
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
     if (todo){
       setTodos([...todos, {
         id:Date.now(),

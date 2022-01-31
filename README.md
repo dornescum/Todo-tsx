@@ -1,3 +1,8 @@
+freeCodeCamp.org
+
+React & TypeScript - Course for Beginners
+https://www.youtube.com/watch?v=FJDVKeh7RJI&t=4072s
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
